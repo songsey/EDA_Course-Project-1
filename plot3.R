@@ -6,7 +6,7 @@ data<-x[(x[,1]>="2007-02-01" & x[,1]<="2007-02-02"),]
 png("plot3.png",width=480,height=480)
 
 
-plot(Sub_metering_1~Datetime,type="l", ylab ="Energy sub metering",data)
+plot(Sub_metering_1~Datetime,type="l", ylab ="Energy sub metering",xlab="",data)
 lines(Sub_metering_2~Datetime,type="l", data,col="red")
 lines(Sub_metering_3~Datetime,type="l", data,col="blue")
 
