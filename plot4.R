@@ -7,7 +7,7 @@ png("plot4.png",width=480,height=480)
 
 par(mfcol=c(2,2))
 
-plot(data[,3]~data$Datetime,type="l",ylab="Global Active Power (kilowatts)",xlab="")
+plot(data[,3]~data$Datetime,type="l",ylab="Global Active Power",xlab="")
 
 plot(Sub_metering_1~Datetime,type="l", ylab ="Energy sub metering",data,xlab="")
 lines(Sub_metering_2~Datetime,type="l", data,col="red")
